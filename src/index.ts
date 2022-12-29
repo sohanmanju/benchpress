@@ -55,7 +55,6 @@ const allocateDeallocate = (numObjects: number): void => {
 }
 
 // Disk Sequential Read and Write
-
 const writeZeros = (filePath: string): void => {
   const buffer = Buffer.alloc(1024 * 1024) // 1 MB buffer
   buffer.fill(0)
